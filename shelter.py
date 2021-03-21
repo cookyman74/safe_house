@@ -54,8 +54,8 @@ if kind == 'on':
                 except Exception as err:
                     print(f"changing file error: {err}")
 
-        for x in dirnames:
-            origin = os.path.join(dirpath, x)
+        for dir_name in dirnames:
+            origin = os.path.join(dirpath, dir_name)
             if len(origin.split("\\")) == 2 and count < 3:
                 count = count + 1
                 random_name = system_folder[random.randrange(len(system_folder))] % utils.get_random_name()
