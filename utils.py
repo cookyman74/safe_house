@@ -1,5 +1,3 @@
-#!/usr/bin/env
-
 import random
 from config import adjs, nouns, RAND_RANGE, transformation, system_folder
 import hashlib
@@ -15,14 +13,6 @@ def get_random_name(adjs=adjs, nouns=nouns):
 
 def transform(extension, transformation=transformation):
     return transformation[extension]['to']
-
-
-def get_system_name(current_dir):
-    os.chdir(current_dir + "\\..")
-    path = os.getcwd()
-    system_folder_name = system_folder[2]
-
-    os.rename(dir_test, new_chdir)
 
 
 def md5_for_file(f, block_size=2 ** 20):

@@ -1,5 +1,3 @@
-#!/usr/bin/env
-
 CHANGE_NAMES = True    # Change to False if you want filenames to remain unchanged.
 RAND_RANGE = 999999    # Generate random nos. upto this number
 
